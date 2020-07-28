@@ -20,8 +20,8 @@
   </li>
   <li class="nav-item">
   <span class="navbar-text">
-  <? if(!empty($admin)) : ?> Администратор <? endif ?>
-  </span>
+    <? if(!empty($admin)) : ?> Администратор <? endif ?>
+    </span>
   </li>
   <li class="nav-item">  
     <? if(empty($admin)) : ?> <a class="nav-link active" href="/auth.php">Вход</a><? endif ?>
@@ -41,11 +41,11 @@
     <? endif ?>
   </div>
   <div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="0" <? if($status == 1) : ?> checked <? endif ?> >
+  <input type="radio" id="customRadioInline1" name="radio" class="custom-control-input" value="1" <? if($status == 1) : ?> checked <? endif ?> >
   <label class="custom-control-label" for="customRadioInline1">Не выполнена</label>
 </div>
 <div class="custom-control custom-radio custom-control-inline">
-  <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="1" <? if($status == 0) : ?> checked <? endif ?>>
+  <input type="radio" id="customRadioInline2" name="radio" class="custom-control-input" value="0" <? if($status == 0) : ?> checked <? endif ?>>
   <label class="custom-control-label" for="customRadioInline2">Выполнена</label>
 </div>
   <button type="submit"  class="btn btn-dark">Сохранить изменения</button>
@@ -55,7 +55,7 @@
   <div class="card-body">
     <h5 class="card-title">Тестовое задание</h5>
     <p class="card-text">Ссылка на git ниже. Время выполнения: 07:36:00</p>
-    <a href="#" class="btn btn-dark">Github</a>
+    <a href="https://github.com/Vanhelm/task_menager" class="btn btn-dark">Github</a>
   </div>
 </div>
 

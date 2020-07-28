@@ -52,7 +52,7 @@
   <div class="card-body">
     <h5 class="card-title">Тестовое задание</h5>
     <p class="card-text">Ссылка на git ниже. Время выполнения: 07:36:00</p>
-    <a href="#" class="btn btn-dark">Github</a>
+    <a href="https://github.com/Vanhelm/task_menager" class="btn btn-dark">Github</a>
   </div>
 </div>
 

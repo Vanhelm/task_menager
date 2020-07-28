@@ -7,6 +7,11 @@ $keys = ['name', 'password'];
 $errors = [];
 $data = [];
 
+if(!empty($admin)){
+    header("Location: /");
+    exit();
+}
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //Проверяем заполнены обязательные поля, если нет записываем в массив  Errors
     foreach ($keys as $val) {
@@ -32,5 +37,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-$content = include_template('auth.php', ['data' => $data, 'errors' => $errors, 'title' => $title]);
+$content = include_template('auth.php', ['data' => $data, 'errors' => $errors, 'title' => $title, 'admin' => $admin]);
 print_r($content);

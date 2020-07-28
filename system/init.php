@@ -10,7 +10,7 @@ date_default_timezone_set('Europe/Moscow');
 
 require_once('functions/functions.php');
 
-$link = mysqli_connect("localhost", "root", "root", "task_manager");
+$link = mysqli_connect("localhost", "vanhelm_tasks", "P4fhpr1231", "vanhelm_tasks");
 $admin_status = 0;
 $admin = [];
 

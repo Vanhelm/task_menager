@@ -47,6 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 
 
-$layout = include_template('add.php', ['title'=>$title, 'errors'=>$errors, 'data'=>$data]);
+$layout = include_template('add.php', ['title'=>$title, 'errors'=>$errors, 'data'=>$data, 'admin' => $admin]);
 
 print_r($layout);
